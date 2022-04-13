@@ -2,6 +2,7 @@
 *.tfstate
 *.tfstate.backup
 *.tfstate.lock.info
+genesyscloud/*.backup
 
 # logs
 *.log
@@ -41,3 +42,6 @@ operations/variable-scripts/variable.json
 
 # Sentinel runtime directory
 .sentinel
+
+# Hugo 
+.hugo_build.lock
