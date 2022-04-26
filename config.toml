@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://genesys-samples.github.io/"
 languageCode = "en-us"
 title = "Genesys Workshops: CX as Code"
 theme = "hugo-theme-learn"
