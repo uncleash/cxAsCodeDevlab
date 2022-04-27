@@ -39,6 +39,6 @@ In this workshop, we will cover 2 primary segments
 
 [Terraform CLI](https://www.terraform.io/downloads)
 
-[Visual STudio Code](https://code.visualstudio.com/)
+[Visual Studio Code](https://code.visualstudio.com/)
 
 
