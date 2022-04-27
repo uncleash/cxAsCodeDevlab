@@ -1,10 +1,10 @@
 ---
-title: "Getting Started"
+title: "CX as Code and Terraform"
 chapter: true
 weight: 20
 ---
 
-## Getting Started
+## Topics
 
 {{% children showhidden="false" %}}
 

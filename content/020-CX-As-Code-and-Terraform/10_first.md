@@ -1,5 +1,5 @@
 ---
-title: "First Lesson"
+title: "CX As Code"
 chapter: false
 weight: 10
 ---
