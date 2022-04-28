@@ -14,7 +14,7 @@ It is best practice to not include spaces in the name of this folder, or files i
 
 You can either right click within this folder and select “Open with code” or navigate to it from VSCode Directly
 
-![](images/Intro_view.png) "slide 10 images"
+![](/content/images/Intro_view.png) "slide 10 images"
 
 ## Create an OAuth Client
 Generate a client credentials auth client in the Genesys Cloud admin panel.​
