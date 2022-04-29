@@ -18,7 +18,6 @@ In this workshop, we will cover 2 primary segments
 
 > Guided Workshop: The second half of the workshop will be a guided walkthrough where you will Fork from Genesys Github repository​, and Construct and execute your first resource!
 
-
 ### Learning Objectives
 - Define and differentiate CX as Code and Terraform
 - Understand basic CX as Code Resource and Data source Structures
@@ -30,7 +29,6 @@ In this workshop, we will cover 2 primary segments
 
 ## Resources
 
-
 [CX as Code Developer Blog](https://developer.genesys.cloud/blog/2021-04-16-cx-as-code/)
 
 [Terraform](https://www.terraform.io/)
@@ -40,5 +38,3 @@ In this workshop, we will cover 2 primary segments
 [Terraform CLI](https://www.terraform.io/downloads)
 
 [Visual Studio Code](https://code.visualstudio.com/)
-
-

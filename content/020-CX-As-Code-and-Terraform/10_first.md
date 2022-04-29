@@ -8,7 +8,7 @@ weight: 10
 
 CX as Code is a configuration tool that allows you to define Genesys CLoud Objects such as Queuesm Skills, Users, etc. in plain text files and then apply that configuration accross multiple Genesys CX organizations
 
-![](images/Intro_view.png) "title of image"
+![Image](/images/Intro_view.png) "title of image"
 
 
 ##

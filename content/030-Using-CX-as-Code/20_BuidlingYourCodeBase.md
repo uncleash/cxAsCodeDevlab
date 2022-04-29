@@ -51,7 +51,7 @@ variable "aws_region" {
 
 Open up a terminal in Visual Studio Code.
 
-![](images/Intro_view.png) "need new image"
+![Image](/images/Intro_view.png) "need new image"
 
 In your terminal, you will run a series of three terraform commands. 
 
@@ -65,7 +65,7 @@ The next command you will run is:
 ```
 terraform plan
 ```
-![](images/Intro_view.png) "need new image"
+![Image](/images/Intro_view.png) "need new image"
 
 This will give you a break down of what will be created, modified, or destroyed by running terraform apply. 
 
