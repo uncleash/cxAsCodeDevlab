@@ -1,7 +1,7 @@
 ---
 title: "Using CX as Code"
 chapter: true
-weight: 20
+weight: 10
 ---
 
 ## Prerequisites

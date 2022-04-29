@@ -1,10 +1,10 @@
 ---
 title: "CX as Code and Terraform"
 chapter: true
-weight: 20
+weight: 10
 ---
 
-## Topics
+## Defining and differentiating CX As Code and Terraform
 
 {{% children showhidden="false" %}}
 
