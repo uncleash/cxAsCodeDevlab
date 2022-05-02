@@ -1,7 +1,7 @@
 ---
 title: "Building Your Code Base"
 chapter: false
-weight: 10
+weight: 30
 ---
 
 ## Setting up your file structure
@@ -51,8 +51,7 @@ variable "aws_region" {
 
 Open up a terminal in Visual Studio Code.
 
-![Image](/images/Intro_view.png) "need new image"
-
+![sdsd](/images/CXTerminal.PNG)
 In your terminal, you will run a series of three terraform commands. 
 
 The first that you will need to run is: 
@@ -65,7 +64,7 @@ The next command you will run is:
 ```
 terraform plan
 ```
-![Image](/images/Intro_view.png) "need new image"
+![Image](/images/CXTFPlan.PNG)
 
 This will give you a break down of what will be created, modified, or destroyed by running terraform apply. 
 
@@ -74,5 +73,7 @@ If everything looks good with the plan, you can probably guess what we're going 
 terraform apply
 ```
 You will need to confirm that you indeed want to make the changes so say "yes". 
+
+![Image](/images/CXTFApply.PNG)
 
 At this point, you should be able to go into the org and see that your changes have been made! Congrats, you've successfully created a skill using CX as Code.

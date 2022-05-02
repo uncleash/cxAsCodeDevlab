@@ -1,9 +1,11 @@
 ---
 title: "Use Cases"
 chapter: false
-weight: 20
+weight: 40
 ---
 
 ## Use Cases
 
-add stuff here.
+CX as Code allows for fast and easy deployment or migration of various configuration objects. 
+
+The ability to bulk export entire configurationclear

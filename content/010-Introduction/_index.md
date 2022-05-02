@@ -1,7 +1,7 @@
 ---
 title: "Introduction"
 chapter: true
-weight: 10
+weight: 1
 ---
 
 # Genesys Workshop Series

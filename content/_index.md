@@ -1,7 +1,7 @@
 ---
 title: "Genesys Workshop"
 chapter: true
-weight: 1
+weight: 90
 ---
 
 # Genesys Workshop
