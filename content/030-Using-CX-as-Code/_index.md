@@ -1,7 +1,7 @@
 ---
 title: "Using CX as Code"
 chapter: true
-weight: 20
+weight: 30
 ---
 
 ## Prerequisites
@@ -15,4 +15,4 @@ weight: 20
   
 ## Topics
 
-{{% children showhidden="false" %}}
+
