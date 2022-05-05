@@ -6,7 +6,7 @@ weight: 1
 
 # Automation with CX as Code
 
-### Overview
+### **Overview**
 
 In this workshop, we will cover 2 primary segments
 
@@ -14,12 +14,12 @@ In this workshop, we will cover 2 primary segments
 
 > **Guided Workshop: The second half of the workshop will be a guided walkthrough where you will create a basic terraform file structure an execute your first CX as Code resource**
 
-### Learning Objectives
+### **Learning Objectives**
 - Define and differentiate CX as Code and Terraform
 - Understand basic CX as Code Resource and Data source Structures
 - Install and access pre-requisites
 - Construct your TF files and execute your first resource
-## Resources
+## **Resources**
 
 [CX as Code Developer Blog](https://developer.genesys.cloud/blog/2021-04-16-cx-as-code/)
 
