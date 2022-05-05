@@ -4,29 +4,21 @@ chapter: true
 weight: 1
 ---
 
-# Genesys Workshop Series
-
-## Introduction
-
-The goal of the workshop is to introduce the newest tool to the Genesys Cloud developer ecosystem. In this workshop, we will be configuring and executing resources sourced from the Genesys Github repository. 
+# Automation with CX as Code
 
 ### Overview
 
 In this workshop, we will cover 2 primary segments
 
-> Overview session on CX as Code: We'll be walking through the fundamentals of CX as Code, Terraform, Resources, and Data Source structures and pre-requisites. 
+> Overview session on CX as Code: We'll be walking through the fundamentals of CX as Code, Terraform, Resources, Data Source structures and pre-requisites. 
 
-> Guided Workshop: The second half of the workshop will be a guided walkthrough where you will Fork from Genesys Github repository​, and Construct and execute your first resource!
+> Guided Workshop: The second half of the workshop will be a guided walkthrough where you will create a basic terraform file structure an execute your first CX as Code resource
 
 ### Learning Objectives
 - Define and differentiate CX as Code and Terraform
 - Understand basic CX as Code Resource and Data source Structures
-- Install and access all pre-requisites
-- Construct an Oauth Client
-- Fork from the Genesys Github Repository
-- Clone your remote Github repository to your local repository
-- Construct and Execute your first resource
-
+- Install and access pre-requisites
+- Construct your TF files and execute your first resource
 ## Resources
 
 [CX as Code Developer Blog](https://developer.genesys.cloud/blog/2021-04-16-cx-as-code/)
