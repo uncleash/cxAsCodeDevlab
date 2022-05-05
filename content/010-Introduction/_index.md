@@ -10,9 +10,9 @@ weight: 1
 
 In this workshop, we will cover 2 primary segments
 
-> Overview session on CX as Code: We'll be walking through the fundamentals of CX as Code, Terraform, Resources, Data Source structures and pre-requisites. 
+> **Overview session on CX as Code: We'll be walking through the fundamentals of CX as Code, Terraform, Resources, Data Source structures and pre-requisites.**
 
-> Guided Workshop: The second half of the workshop will be a guided walkthrough where you will create a basic terraform file structure an execute your first CX as Code resource
+> **Guided Workshop: The second half of the workshop will be a guided walkthrough where you will create a basic terraform file structure an execute your first CX as Code resource**
 
 ### Learning Objectives
 - Define and differentiate CX as Code and Terraform

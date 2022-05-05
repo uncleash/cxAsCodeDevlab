@@ -9,10 +9,4 @@ weight: 30
 | ----------- | ----------- |
 | Genesys Cloud (Admin Access)  | GitBash | 
 | Genesys Cloud developer center  | Visual Studio Code | 
-| GitHub (Create account)  | Terraform CLI | 
- 
-
-  
-## Topics
-
-
+| GitHub (Create account)  | Terraform CLI |
