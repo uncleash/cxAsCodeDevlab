@@ -6,9 +6,26 @@ weight: 30
 
 ## Setting up your file structure
 
-Create two files in VS code: 1. main.tf and 2. variables.tf
+Create two files in VS code: 
+1. Variables.tf
+2. Main.tf
 
-In the main.tf file, copy and paste the following: 
+Copy the code snippit below and paste it into your Variables.tf file. Once copied over you will need to enter your Oauth client ID and secret with the information from the Oauth client you created in the previous step. You will also need to replace the [AWS Region](https://help.mypurecloud.com/articles/aws-regions-for-genesys-cloud-deployment/) (found in the AWS region name column in the linked article) with the AWS region your Genesys Cloud org resides in
+
+```
+variable "oauthclient_id" {
+  default = "OAUTH ID HERE"
+}
+variable "oauthclient_secret" {
+  default = "OAUTH SECRET HERE"
+}
+
+variable "aws_region" {
+  default = "MY AWS REGION"
+}
+```
+
+Copy the code snippit below and paste it into your Main.tf file. This code snip contains your Oauth reference, providers and a resource to construct a routing skill
 
 ```
 terraform {
@@ -32,21 +49,6 @@ resource "genesyscloud_routing_skill" "test_skill" {
 }
 
 ```
-In the variables.tf file, copy and paste the following except replace what's in parentheses with the information from your oAuth you created in the previous step. You also will need to replace the AWS region with the region that your account is in.
-
-```
-variable "oauthclient_id" {
-  default = "OAUTH ID HERE"
-}
-variable "oauthclient_secret" {
-  default = "OAUTH SECRET HERE"
-}
-
-variable "aws_region" {
-  default = "MY AWS REGION"
-}
-```
-
 ## Running the Terraform Commands
 
 Open up a terminal in Visual Studio Code.
