@@ -5,6 +5,6 @@ weight: 90
 ---
 
 # Genesys CX as Code Workshop
-## Introduction
+## Welcome
 
-The goal of the workshop is to introduce the newest tool to the Genesys Cloud developer ecosystem. In this workshop, we will be configuring and executing resources sourced from the Genesys Github repository. 
+The goal of the workshop is to introduce the newest tool to the Genesys Cloud developer ecosystem. In this workshop, we will be configuring and executing resources sourced from the Genesys Github repository.
