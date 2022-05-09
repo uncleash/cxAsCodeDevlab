@@ -1,7 +1,7 @@
 ---
 title: "Terraform"
 chapter: false
-weight: 30
+weight: 20
 ---
 
 ## What is Terraform

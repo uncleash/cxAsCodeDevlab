@@ -1,7 +1,7 @@
 ---
 title: "CX As Code"
 chapter: false
-weight: 20
+weight: 10
 ---
 
 ## What is CX as Code?

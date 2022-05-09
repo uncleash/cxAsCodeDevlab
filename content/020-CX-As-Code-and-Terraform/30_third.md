@@ -1,7 +1,7 @@
 ---
 title: "Use Cases"
 chapter: false
-weight: 40
+weight: 30
 ---
 
 ## Why use CX as Code?
