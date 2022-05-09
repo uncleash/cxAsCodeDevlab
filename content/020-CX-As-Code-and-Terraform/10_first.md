@@ -6,37 +6,32 @@ weight: 10
 
 ## What is CX as Code?
 
-CX as Code is a configuration tool that allows you to define Genesys CLoud Objects such as Queuesm Skills, Users, etc. in plain text files and then apply that configuration accross multiple Genesys CX organizations
+CX as Code is a configuration tool that allows you to define Genesys Cloud objects such as Queues, Skills, Users, etc. in plain text files and then apply that configuration across a single or multiple Genesys Cloud CX organizations
 
-![Image](/images/Intro_view.png) "title of image"
+![CXasCodeOverview](/images/CXasCodeOverview.jpg)
 
 
 ##
 
 ## CX as Code Resources
 
-CX as Code resources are used to create configuration components using various Imput fields such as name and description as well as data sources (such as division_ID or Queue_Flow_ID) 
+CX as Code resources are used to **create** configuration components using inputs (such as the name of a skill), however; some resources have numerous dependencies, or configuration objects that must exist or be created in tandem for the resource to be created
 
-*image slide 5*
+> Below is an example of a resource with various inputs (name, description) and data source dependencies (queue_flow_id, whisper_prompt_id)
+
+![Image](/images/CXResource.PNG)
 
 ## CX as Code Data Sources
 
-Data Sources are simelar to GET Requests, allowing you to GET refrencable information that exists on the platform to be refrenced within resources by component name as shown below
+Data Sources are similar to GET Requests, allowing you to GET information that already exists on the platform to be referenced within resources by component name as shown below
 
-- In the data source below (see image), we are retrieving the welcome greeting by its name "Welcome_Greeting", this can be then refrenced in the previous resource example to populate the whisper prompt for the queue
+> Below is an example of a data source, we are retrieving the welcome greeting by its name "Welcome_Greeting", this can be then referenced in the previous resource example to populate the whisper prompt for the queue
 
-*image slide 6*
+![Image](/images/CXDataSource.PNG)
 
 
 ## Auth Access Requirements
 
-Within resources you will see a defined list of API access requirements for the auth client you've constructted which will outline the permissions your auth client requires to execute the sepcific resource you are reviewing
+Within resources on the terraform registry you will see a defined list of API access requirements for the Oauth client you've constructed which will outline the permissions your Oauth client requires to execute the specific resource you are reviewing
 
-*image slide 7*
-
-
-## What is Terraform
-
-Terraform is a tool for building and managing infrastructures. It takes in configuration files, which specify how the resources should be set up and configured. Terraform will generate an execution plan describing what needs to be done to reach the desired state. Terraform then applies the plan and builds the specified infrastructure. When new changes are made to the configuration files, Terraform is able to detect differences and generate incremental execution plans for changes.​
-
-*image slide 8*
+![Image](/images/CXAuthReq.PNG)

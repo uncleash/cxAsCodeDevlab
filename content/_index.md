@@ -1,16 +1,11 @@
 ---
-title: "Genesys Workshop"
+title: "Genesys CX as Code Workshop"
 chapter: true
-weight: 1
+weight: 90
 ---
 
-# Genesys Workshop
+# Genesys CX as Code Workshop
+## Welcome
 
-### Welcome
+The goal of the workshop is to introduce the newest tool to the Genesys Cloud developer ecosystem. In this workshop, we will be configuring and executing resources sourced from the Genesys Github repository.
 
-In this workshop you will learn to apply your foundational knowledge of [Genesys](https://genesys.com) and master example use cases that demonstrate [Experience as a Service](https://www.genesys.com/experience-as-a-service).
-
-### Learning Objectives
-- Setup and configure your environment.
-- Creating users and groups.
-- Configure security.
