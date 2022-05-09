@@ -1,7 +1,7 @@
 ---
 title: "Introduction"
 chapter: true
-weight: 1
+weight: 10
 ---
 
 # Automation with CX as Code
@@ -25,7 +25,7 @@ In this workshop, we will cover 2 primary segments
 
 [Terraform](https://www.terraform.io/)
 
-[Genesys Terraform Github Repository](https://github.com/MyPureCloud/terraform-provider-genesyscloud)
+[Genesys Blueprint Github Repository](https://github.com/GenesysCloudBlueprints)
 
 [Terraform CLI](https://www.terraform.io/downloads)
 

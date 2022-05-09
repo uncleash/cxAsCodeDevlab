@@ -1,7 +1,7 @@
 ---
 title: "Building Your Code Base"
 chapter: false
-weight: 30
+weight: 20
 ---
 
 ## Setting up your file structure

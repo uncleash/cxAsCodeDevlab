@@ -1,7 +1,7 @@
 ---
 title: "Gitting Started... haha"
 chapter: false
-weight: 20
+weight: 10
 ---
 
 ## Create a local file repository
