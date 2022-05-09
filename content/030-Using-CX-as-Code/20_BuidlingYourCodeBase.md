@@ -66,7 +66,7 @@ The next command you will run is:
 ```
 terraform plan
 ```
-![Image](/images/CXTFPlan.PNG)
+![image](/images/CXTFPlan.PNG)
 
 This will give you a break down of what will be created, modified, or destroyed by running terraform apply. 
 
@@ -76,6 +76,6 @@ terraform apply
 ```
 You will need to confirm that you indeed want to make the changes so say "yes". 
 
-![Image](/images/CXTFApply.PNG)
+![image](/images/CXTFApply.PNG)
 
 At this point, you should be able to go into the org and see that your changes have been made! Congrats, you've successfully created a skill using CX as Code.
