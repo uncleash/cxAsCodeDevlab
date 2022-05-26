@@ -14,7 +14,7 @@ This is fancy talk for creating a folder locally on your machine that will be us
 
 You can either right click within this folder and select “Open with code” or navigate to it from VSCode Directly
 
-![Image](/images/CXFolderNav.PNG)
+![image](/images/CXFolderNav.PNG)
 
 ## Create an OAuth Client
 Generate a client credentials Oauth client in the Genesys Cloud admin panel.​
@@ -22,4 +22,4 @@ Generate a client credentials Oauth client in the Genesys Cloud admin panel.​
 The roles tab is where you specify the permissions this client will have.
 > it is best practice to limit the permissions of clients to only their required functions
 
-![Image](/images/CXAuthClient.PNG)
+![image](/images/CXAuthClient.PNG)

@@ -21,7 +21,7 @@ CX as Code provides alleviates the need for administrators to worry about which 
 
 > Below is an example of a construct phone resource with numerous dependencies, such as site and base information, that would need to be constructed prior to being able to build this phone. Terraform will map out the required construction sequence to ensure all dependencies are constructed in the order necessary to achieve the phone construction
 
-![Image](/images/CXDependencies.PNG)
+![image](/images/CXDependencies.PNG)
 
 In addition to the use cases above, if any of these items are a concern to you, CX as Code may be the solution;
 1. Immutable infrastructure
