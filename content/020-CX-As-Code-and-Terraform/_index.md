@@ -8,6 +8,8 @@ weight: 20
 
 In this section you will learn to define and differentiate the various elements of CX as Code and Terraform
 
+The concept of CX as Code embodies a DevOps methdology where the end state would be to build a pipeline of code managed within Github can push changes and configurations to multiple Genesys CX orgs. Below are different pages that further discuss the concept of CX as Code, Terraform and why CX as code can be a benificial tool.
+
 ### Index
 
 [What is CX as Code?](020-cx-as-code-and-terraform/10_first.html)
