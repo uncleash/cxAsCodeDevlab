@@ -1,12 +1,19 @@
 ---
-title: "CX As Code"
+title: "What is CX As Code?"
 chapter: false
 weight: 10
 ---
 
 ## What is CX as Code?
 
-CX as Code is a configuration tool that allows you to define Genesys Cloud objects such as Queues, Skills, Users, etc. in plain text files and then apply that configuration across a single or multiple Genesys Cloud CX organizations
+CX as Code is a configuration tool that allows you to define Genesys Cloud objects such as Queues, Skills, Users, etc. in plain text files and then apply that configuration across a single or multiple Genesys Cloud CX organizations.
+
+Uses for CX as code could be:
+- Provisioning of a Genesys CX organization's initial configurations
+- Deployment of CX infrastructure accross multiple Genesys CX organizations
+- Replication of core CX infrastructure to a Disaster Recovery (DR) Environment
+
+
 
 ![CXasCodeOverview](/images/CXasCodeOverview.jpg)
 
