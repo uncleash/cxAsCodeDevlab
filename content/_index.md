@@ -15,7 +15,7 @@ The CX as code leverages a DevOps methdology to allow changes and configurations
 
 This course will cover getting started with the basic concepts of CX as code introducing you to the various tools at your disposal such as terraform, IDE's (VS Code), and Oauth at a ground level. This course is expected to take 4 hours or less. 
 
-Once you have successfulyl completed this course, you will have the foundations to move on in building your own CI/CD pipeline!
+Once you have successfully completed this course, you will have the foundations to move on in building your own CI/CD pipeline!
 
 ![image](/images/Developerimage.jpg)
 
