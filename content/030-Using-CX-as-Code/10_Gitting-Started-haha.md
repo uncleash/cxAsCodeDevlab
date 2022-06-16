@@ -51,4 +51,4 @@ With the terminal now open we will run the following command:
 
 ![image](/images/GITclonecommand.png)
 
-> **And there you go! You have now successfully cloned down a repository to your local machine to start working on your first terraform scripts. In the next module, we will work through some example terraform scripts getting started with the basics of creating your pipeline of code for condifuring your Genesys CX deployments** 
+> **And there you go! You have now successfully cloned down a repository to your local machine to start working on your first terraform scripts. In the next module, we will work through some example terraform scripts getting started with the basics of creating your pipeline of code for configuring your Genesys CX deployments** 
