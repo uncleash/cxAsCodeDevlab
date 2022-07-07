@@ -6,7 +6,7 @@ weight: 20
 
 ## Setting up your file structure
 
-From here, we will be starting from scratch with two terraform scripts and how to get started with terraform. Below you will see two seperate terraform files you will need to create. Within VS Code, create new folders with the naming convention below:
+From here, we will be starting from scratch with two terraform scripts and how to get started with terraform. Below you will see two separate terraform files you will need to create. Within VS Code, create new folders with the naming convention below:
 
 Create two files in VS code: 
 1. Variables.tf
