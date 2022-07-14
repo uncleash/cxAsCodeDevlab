@@ -1,53 +1,29 @@
 ---
-title: "What is CX As Code?"
+title: "Why use CX as Code?"
 chapter: false
 weight: 10
 ---
 
-## What is CX as Code?
+## Why use CX as Code?
 
-CX as Code is a configuration tool that allows you to define Genesys Cloud objects such as Queues, Skills, Users, etc. in plain text files and then apply that configuration across a single or multiple Genesys Cloud CX organizations.
+You may be looking at some of the resource articles, or have skipped ahead a few pages in the workshop and asked yourself "Why would I go through all of this to simply construct a skill?"
 
-Uses for CX as code could be:
-- Provisioning of a Genesys CX organization's initial configurations
-- Deployment of CX infrastructure accross multiple Genesys CX organizations
-- Replication of core CX infrastructure to a Disaster Recovery (DR) Environment
+While this workshop is intended to provide a foundational knowledge of CX as Code, the scope of CX as Code is well beyond spending 4 hours building a skill
 
+The Genesys Cloud administrative functions within the GUI are designed to be incredibly simple, but there are numerous applications where CX as Code can bolster and automate your administrative capabilities
 
 
-![CXasCodeOverview](/images/CXasCodeOverview.jpg)
+### Multi-Org Configuration
+CX as Code allows you to build once and deploy everywhere, accelerating multi-org deployments or configuration changes
 
+### Ease of Administration
+CX as Code alleviates the need for administrators to worry about which configuration objects have what dependencies; Terraform will reference the requested resources and data sources to map out the logical order of how things need to be constructed based upon the required dependencies.
 
-##
+> Below is an example of a construct phone resource with numerous dependencies, such as site and base information, that would need to be constructed prior to being able to build this phone. Terraform will map out the required construction sequence to ensure all dependencies are constructed in the order necessary to achieve the phone construction
 
-## CX as Code Resources
+![image](/images/CXDependencies.PNG)
 
-CX as Code resources are used to **create** configuration components using inputs (such as the name of a skill), however; some resources have numerous dependencies, or configuration objects that must exist or be created in tandem for the resource to be created.
-
-
-
-> Below is an example of a resource with various inputs (name, description) and data source dependencies (queue_flow_id, whisper_prompt_id)
-
-![image](/images/CXResource.PNG)
-
-## CX as Code Data Sources
-
-Data Sources are similar to GET Requests, allowing you to GET information that already exists on the platform to be referenced within resources by component name as shown below
-
-> Below is an example of a data source, we are retrieving the welcome greeting by its name "Welcome_Greeting", this can be then referenced in the previous resource example to populate the whisper prompt for the queue
-
-![image](/images/CXDataSource.PNG)
-
-## GitHub Hosting Tools for CX as Code
-
-In this course we will be using Github as a repository hosting provider in order to not only host but pull down or share previously developed blueprints for different use cases as found on the Genesys Developer Center.
-
-GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere. If this is your first time working with Github, we will move through the link below together on some of the basic termonology, use of Github and scenarios of why Github is useful for you and your team. 
-
-[Getting Started with Github](https://docs.github.com/en/get-started/quickstart/hello-world)
-
-## Auth Access Requirements
-
-Within resources on the terraform registry you will see a defined list of API access requirements for the Oauth client you've constructed which will outline the permissions your Oauth client requires to execute the specific resource you are reviewing
-
-![image](/images/CXAuthReq.PNG)
+In addition to the use cases above, if any of these items are a concern to you, CX as Code may be the solution;
+1. Immutable infrastructure
+2. Provisioning, configuration management and DevOps tasks
+3. Building a CI/CD pipeline
