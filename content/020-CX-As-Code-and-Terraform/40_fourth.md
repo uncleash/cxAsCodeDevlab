@@ -83,10 +83,15 @@ Note: git-scm is a popular and recommended resource for downloading Git on a Mac
 Install Git from Homebrew
 Homebrew is a popular package manager for macOS. If you already have Homwbrew installed, you can follow the below steps to install Git:
 
+For mac, you will need to move through the following steps
+
+- Download **[brew](https://brew.sh/)** and following the download instructions to properly configure brew on your Mac
+- once you have downloaded brew on your Mac OS, you may download terraform from the link provided above or paste the following commands into your command line
+
 Open up a terminal window and install Git using the following command: 
 
 ```
-$brew install git
+brew install git
 ```
 
 Once the command output has completed, you can verify the installation by typing: 
@@ -110,7 +115,7 @@ And
 
 Connecting over HTTPS:
 
-- [Cloning with SSH urls](https://docs.github.com/en/github/getting-started-with-github/about-remote-repositories/#cloning-with-https-urls)
+- [Cloning with HTTPS urls](https://docs.github.com/en/github/getting-started-with-github/about-remote-repositories/#cloning-with-https-urls)
 - [Caching yout GitHub Credentials in Git](https://docs.github.com/en/github/getting-started-with-github/caching-your-github-credentials-in-git)
 
 ### Terraform
@@ -121,7 +126,7 @@ For mac, you will need to move through the following steps
 - once you have downloaded brew on your Mac OS, you may download terraform from the link provided above or paste the following commands into your command line
 
 ```
-$ brew tap hashicorp/tap
-$ brew install hashicorp/tap/terraform
+ brew tap hashicorp/tap
+ brew install hashicorp/tap/terraform
 
 ```
