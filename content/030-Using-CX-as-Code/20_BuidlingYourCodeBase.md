@@ -81,3 +81,75 @@ You will need to confirm that you indeed want to make the changes so say "yes".
 ![image](/images/CXTFApply.PNG)
 
 At this point, you should be able to go into the org and see that your changes have been made! Congrats, you've successfully created a skill using CX as Code.
+
+Now that we have configured a single object, we can move forward to more complex object creation involving dependancies. We will be adding a user to home division with the the skill we have already created. 
+
+Below is a user constructional resource, many of the optional configuration components have been removed. We will copy this code snip and paste it within the main.tf file underneath the skill resource we created as your initial configuration. 
+
+```
+resource "genesyscloud_user" "test_user" {
+  email           = "workshopuser00@genesystest.com"
+  name            = "Workshop User 00"
+  password        = "123Password!"
+  state           = "inactive"
+  acd_auto_answer = true
+  division_id     = genesyscloud_auth_division.terraform.id
+  routing_skills {
+    skill_id    = genesyscloud_routing_skill.test_skill.id
+    proficiency = 4.5
+  }
+  routing_utilization {
+    call {
+      maximum_capacity = 1
+      include_non_acd  = true
+    }
+    callback {
+      maximum_capacity          = 2
+      include_non_acd           = false
+      interruptible_media_types = ["call", "email"]
+    }
+    chat {
+      maximum_capacity          = 3
+      include_non_acd           = false
+      interruptible_media_types = ["call"]
+    }
+    email {
+      maximum_capacity          = 2
+      include_non_acd           = false
+      interruptible_media_types = ["call", "chat"]
+    }
+    video {
+      maximum_capacity          = 1
+      include_non_acd           = false
+      interruptible_media_types = ["call"]
+    }
+    message {
+      maximum_capacity          = 4
+      include_non_acd           = false
+      interruptible_media_types = ["call", "chat"]
+    }
+  }
+}
+
+```
+
+Now, we can save and apply your terraform script and execute the change.
+
+We will notice an error occur as shown below:
+
+![image](/images/terraformerror.png)
+
+The error tells us that we need to use a data source within the script identifying the division this plan is applying to. We will navigate here to find that source --> [here](https://registry.terraform.io/providers/MyPureCloud/genesyscloud/latest/docs/data-sources/auth_division)
+
+
+
+Now we will copy and paste the division data source in order for our script to properly run.
+
+>Note we have modified the Variable name to terraform to match our user resource, and we are searching for the "Home" Division by its name.
+
+```
+data "genesyscloud_auth_division" "terraform" {
+  name = "home"
+}
+```
+Now we apply our terraform plan again and you may notice another error, how are we going to fix it?
