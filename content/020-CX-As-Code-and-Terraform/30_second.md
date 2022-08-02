@@ -22,7 +22,7 @@ Uses for CX as code could be:
 
 ## CX as Code Resources
 
-CX as Code resources are used to **create** configuration components using inputs (such as the name of a skill), however; some resources have numerous dependencies, or configuration objects that must exist or be created in tandem for the resource to be created.
+CX as Code Resources are used to **create** configuration components using inputs (such as the name of a skill, or a users name and email), however; some resources have numerous dependencies, or configuration objects that must exist or be created in tandem for the resource to be created.
 
 
 
@@ -37,14 +37,6 @@ Data Sources are similar to GET Requests, allowing you to GET information that a
 > Below is an example of a data source, we are retrieving the welcome greeting by its name "Welcome_Greeting", this can be then referenced in the previous resource example to populate the whisper prompt for the queue
 
 ![image](/images/CXDataSource.PNG)
-
-## GitHub Hosting Tools for CX as Code
-
-In this course we will be using Github as a repository hosting provider in order to not only host but pull down or share previously developed blueprints for different use cases as found on the Genesys Developer Center.
-
-GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere. If this is your first time working with Github, we will move through the link below together on some of the basic termonology, use of Github and scenarios of why Github is useful for you and your team. 
-
-[Getting Started with Github](https://docs.github.com/en/get-started/quickstart/hello-world)
 
 ## Auth Access Requirements
 

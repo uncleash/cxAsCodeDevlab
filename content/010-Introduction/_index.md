@@ -17,7 +17,7 @@ In this workshop, we will cover 2 primary segments:
 ### **Learning Objectives**
 - Define and differentiate CX as Code and Terraform
 - Understand basic CX as Code Resource and Data Source Structures
-- Install and access pre-requisites
+- Install/access pre-requisites
 - Construct your Terraform files and execute your first resource
 ## **Resources**
 
@@ -30,3 +30,5 @@ In this workshop, we will cover 2 primary segments:
 [Terraform CLI](https://www.terraform.io/downloads)
 
 [Visual Studio Code](https://code.visualstudio.com/)
+
+[Genesys Cloud Terraform Registry](https://registry.terraform.io/providers/MyPureCloud/genesyscloud/latest/docs)
