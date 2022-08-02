@@ -4,15 +4,22 @@ chapter: false
 weight: 20
 ---
 
+## The Terraform Registry
+
+The code snips we will be referencing for our configuration below can be found at the Genesys Cloud Terraform Registry.
+
+Before we begin our code setup, we will take a brief walk through of the terraform registry which can be found [Here](https://registry.terraform.io/providers/MyPureCloud/genesyscloud/latest/docs).
+
+
 ## Setting up your file structure
 
-From here, we will be starting from scratch with two terraform scripts and how to get started with terraform. Below you will see two separate terraform files you will need to create. Within VS Code, create new folders with the naming convention below:
+From here, we will be starting from scratch with two terraform scripts and how to get started with terraform. Below you will see two separate terraform files you will need to create.
 
-Create two files in VS code: 
+Within VS Code create the following two files (you can right click within your explorer or select file and "create file"): 
 1. Variables.tf
 2. Main.tf
 
-Copy the code snippit below and paste it into your Variables.tf file. Once copied over you will need to enter your Oauth client ID and secret with the information from the Oauth client you created in the previous step. You will also need to replace the [AWS Region](https://help.mypurecloud.com/articles/aws-regions-for-genesys-cloud-deployment/) (found in the AWS region name column in the linked article) with the AWS region your Genesys Cloud org resides in
+Copy the code snippit below and paste it into your Variables.tf file. Once copied over you will need to enter your Oauth client ID and secret with the information from the Oauth client you created in Genesys Cloud. You will also need to replace the [AWS Region](https://help.mypurecloud.com/articles/aws-regions-for-genesys-cloud-deployment/) (found in the AWS region name column in the linked article) with the AWS region your Genesys Cloud org resides in
 
 ```
 variable "oauthclient_id" {
@@ -27,7 +34,7 @@ variable "aws_region" {
 }
 ```
 
-Copy the code snippit below and paste it into your Main.tf file. This code snip contains your Oauth reference, providers and a resource to construct a routing skill
+Copy the code snippit below and paste it into your Main.tf file. This code snip contains your Oauth reference, terraform providers and a resource to construct a routing skill.
 
 ```
 terraform {
@@ -82,7 +89,7 @@ You will need to confirm that you indeed want to make the changes so say "yes".
 
 At this point, you should be able to go into the org and see that your changes have been made! Congrats, you've successfully created a skill using CX as Code.
 
-Now that we have configured a single object, we can move forward to more complex object creation involving dependancies. We will be adding a user to home division with the the skill we have already created. 
+Now that we have configured a single object, we can move forward to more complex object creation involving dependencies. We will be adding a user to home division with the the skill we have already created. 
 
 Below is a user constructional resource, many of the optional configuration components have been removed. We will copy this code snip and paste it within the main.tf file underneath the skill resource we created as your initial configuration. 
 
@@ -139,7 +146,7 @@ We will notice an error occur as shown below:
 
 ![image](/images/terraformerror.png)
 
-The error tells us that we need to use a data source within the script identifying the division this plan is applying to. We will navigate here to find that source --> [here](https://registry.terraform.io/providers/MyPureCloud/genesyscloud/latest/docs/data-sources/auth_division)
+The error tells us that we need to use a data source within the script identifying the division this plan is applying to. We will navigate here to find that data source --> [here](https://registry.terraform.io/providers/MyPureCloud/genesyscloud/latest/docs/data-sources/auth_division)
 
 
 
