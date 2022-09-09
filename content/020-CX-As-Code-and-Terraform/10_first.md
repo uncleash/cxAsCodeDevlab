@@ -16,6 +16,12 @@ The Genesys Cloud administrative functions within the GUI are designed to be inc
 ### Multi-Org Configuration
 CX as Code allows you to build once and deploy everywhere, accelerating multi-org deployments or configuration changes.
 
+### Promoting Changes
+CX as Code awards developers and administrators the ability to promote configuration changes from dev platforms to QA, or from QA to production. This allows for true UAT style validations prior to deployment and minimizes impact on live orgs.
+
+### Standby Org Replication
+CX as Code allows for replication of most major configuration components from production orgs to standby DR orgs. Administrators no longer need to manually build shell configurations and can easily replicate major contact center functionalities to different regions in an automated manner.
+
 ### Ease of Administration
 CX as Code alleviates the need for administrators to worry about which configuration objects have what dependencies; Terraform will reference the requested resources and data sources to map out the logical order of how things need to be constructed based upon the required dependencies.
 
@@ -27,4 +33,3 @@ In addition to the use cases above, if any of these items are a concern to you, 
 1. Immutable infrastructure
 2. Provisioning, configuration management and DevOps tasks
 3. Building a CI/CD pipeline
-4. Standby Org Configuration mirroring

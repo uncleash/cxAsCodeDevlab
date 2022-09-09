@@ -21,14 +21,14 @@ In this workshop, we will cover 2 primary segments:
 - Construct your Terraform files and execute your first resource
 ## **Resources**
 
-[CX as Code Developer Blog](https://developer.genesys.cloud/blog/2021-04-16-cx-as-code/)
+**[CX as Code Developer Blog](https://developer.genesys.cloud/blog/2021-04-16-cx-as-code/)**
 
-[Terraform](https://www.terraform.io/)
+**[Terraform](https://www.terraform.io/)**
 
-[Genesys Blueprint Github Repository](https://github.com/GenesysCloudBlueprints)
+**[Genesys Blueprint Github Repository](https://github.com/GenesysCloudBlueprints)**
 
-[Terraform CLI](https://www.terraform.io/downloads)
+**[Terraform CLI](https://www.terraform.io/downloads)**
 
-[Visual Studio Code](https://code.visualstudio.com/)
+**[Visual Studio Code](https://code.visualstudio.com/)**
 
-[Genesys Cloud Terraform Registry](https://registry.terraform.io/providers/MyPureCloud/genesyscloud/latest/docs)
+**[Genesys Cloud Terraform Registry](https://registry.terraform.io/providers/MyPureCloud/genesyscloud/latest/docs)**

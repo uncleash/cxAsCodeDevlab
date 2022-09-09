@@ -8,7 +8,7 @@ weight: 20
 
 The code snips we will be referencing for our configuration below can be found at the Genesys Cloud Terraform Registry.
 
-Before we begin our code setup, we will take a brief walk through of the terraform registry which can be found [Here](https://registry.terraform.io/providers/MyPureCloud/genesyscloud/latest/docs).
+Before we begin our code setup, we will take a brief walk through of the terraform registry which can be found **[Here](https://registry.terraform.io/providers/MyPureCloud/genesyscloud/latest/docs).**
 
 
 ## Setting up your file structure
@@ -19,7 +19,9 @@ Within VS Code create the following two files (you can right click within your e
 1. Variables.tf
 2. Main.tf
 
-Copy the code snippit below and paste it into your Variables.tf file. Once copied over you will need to enter your Oauth client ID and secret with the information from the Oauth client you created in Genesys Cloud. You will also need to replace the [AWS Region](https://help.mypurecloud.com/articles/aws-regions-for-genesys-cloud-deployment/) (found in the AWS region name column in the linked article) with the AWS region your Genesys Cloud org resides in
+Copy the code snippit below and paste it into your Variables.tf file. Once copied over you will need to enter your Oauth client ID and secret with the information from the Oauth client you created in Genesys Cloud. 
+
+You will also need to replace the **[AWS Region](https://help.mypurecloud.com/articles/aws-regions-for-genesys-cloud-deployment/)** (found in the **AWS region name** column in the linked article) with the AWS region your Genesys Cloud org resides in. You can determine your AWS region by referencing the URL you use to access your org (Example: if you login to your org at https://login.usw2.pure.cloud/, you will input us-west-2 in the AWS Region Name field below)
 
 ```
 variable "oauthclient_id" {
@@ -30,15 +32,22 @@ variable "oauthclient_secret" {
 }
 
 variable "aws_region" {
-  default = "MY AWS REGION"
+  default = "AWS Region Name"
 }
 ```
 
+
+**> Depending on when you downloaded terraform, you may have a different version than the "required_version = "~> 1.2.6" listed below. If you receive a version error such as "Unsupported Terraform Core Version" you can run "Terraform Version" (displayed below) and update the code to your current version.**
+
+![image](/images/tfversion.PNG)
+
 Copy the code snippit below and paste it into your Main.tf file. This code snip contains your Oauth reference, terraform providers and a resource to construct a routing skill.
+
+
 
 ```
 terraform {
-  required_version = "~> 1.1.6"
+  required_version = "~> 1.2.6"
   required_providers {
     genesyscloud = {
       source  = "mypurecloud/genesyscloud"
@@ -146,7 +155,7 @@ We will notice an error occur as shown below:
 
 ![image](/images/terraformerror.png)
 
-The error tells us that we need to use a data source within the script identifying the division this plan is applying to. We will navigate here to find that data source --> [here](https://registry.terraform.io/providers/MyPureCloud/genesyscloud/latest/docs/data-sources/auth_division)
+The error tells us that we need to use a data source within the script identifying the division this plan is applying to. We will navigate **[here](https://registry.terraform.io/providers/MyPureCloud/genesyscloud/latest/docs/data-sources/auth_division)** to find that data source.
 
 
 

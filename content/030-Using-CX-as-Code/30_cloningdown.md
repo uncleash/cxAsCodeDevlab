@@ -10,12 +10,12 @@ Below we will be using Github as a repository hosting provider in order to not o
 
 GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere. If this is your first time working with Github, we will move through the link below together on some of the basic terminology, use of Github and scenarios of why Github is useful for you and your team. 
 
-[Getting Started with Github](https://docs.github.com/en/get-started/quickstart/hello-world)
+**[Getting Started with Github](https://docs.github.com/en/get-started/quickstart/hello-world)**
 
 
 ## Clone Your Repository
 
-Here, we will walk through how to clone your Terraform repository from the provided GitHub repo [here](https://github.com/MyPureCloud/terraform-provider-genesyscloud)
+Here, we will walk through how to clone your Terraform repository from the provided GitHub repo **[here](https://github.com/MyPureCloud/terraform-provider-genesyscloud)**
 
 To start, there are two ways to clone down your repository. The first is to fork the repository and the second is to clone the repository directly. Here, we reccomend forking the repository first, then cloning it down to your machine within VS Code.
 
