@@ -38,15 +38,15 @@ There are two primary methods of cloning from Github, SSH and HTTPS which each r
 
 Connecting over SSH:
 
-- [Cloning with SSH urls](https://docs.github.com/en/github/getting-started-with-github/about-remote-repositories/#cloning-with-ssh-urls)
-- [Generating a new SSH Key](https://docs.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+- **[Cloning with SSH urls](https://docs.github.com/en/github/getting-started-with-github/about-remote-repositories/#cloning-with-ssh-urls)**
+- **[Generating a new SSH Key](https://docs.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)**
 
 And 
 
 Connecting over HTTPS:
 
-- [Cloning with SSH urls](https://docs.github.com/en/github/getting-started-with-github/about-remote-repositories/#cloning-with-https-urls)
-- [Caching yout GitHub Credentials in Git](https://docs.github.com/en/github/getting-started-with-github/caching-your-github-credentials-in-git)
+- **[Cloning with SSH urls](https://docs.github.com/en/github/getting-started-with-github/about-remote-repositories/#cloning-with-https-urls)**
+- **[Caching yout GitHub Credentials in Git](https://docs.github.com/en/github/getting-started-with-github/caching-your-github-credentials-in-git)**
 
 
 ### Terraform
@@ -64,17 +64,21 @@ Note that this download process can take a while, allow anywhere from 10-30 minu
 
 You may download VS Code directly -->  **[here](https://code.visualstudio.com/download)**
 
+You will need to install the terraform extension within VS Code by navigating to extensions on the left pane, searching "HashiCorp Terraform" and installing the extension displayed below.
+
+![image](/images/tfextension.PNG)
+
 ### GitHub and GIT
 
 ##### GitHub:
 
 Creating an account
-To sign up for an account on GitHub.com, navigate to [Github.com](https://github.com/) and follow the prompts.
+To sign up for an account on GitHub.com, navigate to **[Github.com](https://github.com/)** and follow the prompts.
 
 ##### GIT
 Most versions of MacOS will already have Git installed, and you can activate it through the terminal with git version. However, if you don't have Git installed for whatever reason, you can install the latest version of Git using one of several popular methods as listed below:
 
-- Navigate to the latest macOS Git Installer and download the latest version found **[here](https://sourceforge.net/projects/git-osx-installer/files/git-2.23.0-intel-universal-mavericks.dmg/download?use_mirror=autoselect)
+- Navigate to the latest macOS Git Installer and download the latest version found **[here](https://sourceforge.net/projects/git-osx-installer/files/git-2.23.0-intel-universal-mavericks.dmg/download?use_mirror=autoselect)**
 - Once the installer has started, follow the instructions as provided until the installation is complete.
 - Open the command prompt "terminal" and type git version to verify Git was installed.
 
@@ -108,15 +112,15 @@ There are two primary methods of cloning from Github, SSH and HTTPS which each r
 
 Connecting over SSH:
 
-- [Cloning with SSH urls](https://docs.github.com/en/github/getting-started-with-github/about-remote-repositories/#cloning-with-ssh-urls)
-- [Generating a new SSH Key](https://docs.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+- **[Cloning with SSH urls](https://docs.github.com/en/github/getting-started-with-github/about-remote-repositories/#cloning-with-ssh-urls)**
+- **[Generating a new SSH Key](https://docs.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)**
 
 And 
 
 Connecting over HTTPS:
 
-- [Cloning with HTTPS urls](https://docs.github.com/en/github/getting-started-with-github/about-remote-repositories/#cloning-with-https-urls)
-- [Caching yout GitHub Credentials in Git](https://docs.github.com/en/github/getting-started-with-github/caching-your-github-credentials-in-git)
+- **[Cloning with HTTPS urls](https://docs.github.com/en/github/getting-started-with-github/about-remote-repositories/#cloning-with-https-urls)**
+- **[Caching yout GitHub Credentials in Git](https://docs.github.com/en/github/getting-started-with-github/caching-your-github-credentials-in-git)**
 
 ### Terraform
 
