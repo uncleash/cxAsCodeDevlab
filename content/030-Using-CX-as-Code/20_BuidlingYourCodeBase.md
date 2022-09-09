@@ -47,6 +47,7 @@ Copy the code snippit below and paste it into your Main.tf file. This code snip 
 
 ```
 terraform version
+
 ```
 
 
