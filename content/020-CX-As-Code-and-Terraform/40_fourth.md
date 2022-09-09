@@ -82,9 +82,9 @@ Most versions of MacOS will already have Git installed, and you can activate it 
 - Once the installer has started, follow the instructions as provided until the installation is complete.
 - Open the command prompt "terminal" and type git version to verify Git was installed.
 
-Note: git-scm is a popular and recommended resource for downloading Git on a Mac. The advantage of downloading Git from git-scm is that your download automatically starts with the latest version of Git. The download source is the same macOS Git Installer as referenced in the steps above.
 
-Install Git from Homebrew
+#### or
+Install Git from Homebrew: 
 Homebrew is a popular package manager for macOS. If you already have Homwbrew installed, you can follow the below steps to install Git:
 
 For mac, you will need to move through the following steps

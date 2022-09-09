@@ -43,6 +43,11 @@ variable "aws_region" {
 
 Copy the code snippit below and paste it into your Main.tf file. This code snip contains your Oauth reference, terraform providers and a resource to construct a routing skill.
 
+> note: Run the following command to find your terraform version and edit the "required version" field 
+
+```
+terraform version
+```
 
 
 ```
