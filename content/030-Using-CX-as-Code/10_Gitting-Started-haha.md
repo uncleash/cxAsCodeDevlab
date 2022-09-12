@@ -13,9 +13,9 @@ First things first, we will be creating a local file repository or "repo". This 
 
 ## Open this folder within VSCode
 
-You can either right click within this folder and select “Open with code” or navigate to it from VSCode directly.
+For both Mac and PC You select “Open with code” or navigate to it from VSCode directly to open your project folder.
 
-![image](/images/CXFolderNav.PNG)
+![image](/images/VS_openfolder.png)
 
 ## Create an OAuth Client
 
