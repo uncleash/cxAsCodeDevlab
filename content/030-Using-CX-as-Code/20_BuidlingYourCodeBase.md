@@ -36,20 +36,7 @@ variable "aws_region" {
 }
 ```
 
-
-**> Depending on when you downloaded terraform, you may have a different version than the "required_version = "~> 1.2.6" listed below. If you receive a version error such as "Unsupported Terraform Core Version" you can run "Terraform Version" (displayed below) and update the code to your current version.**
-
-![image](/images/tfversion.PNG)
-
-Copy the code snippit below and paste it into your Main.tf file. This code snip contains your Oauth reference, terraform providers and a resource to construct a routing skill.
-
-> note: Run the following command to find your terraform version and edit the "required version" field 
-
-```
-terraform version
-
-```
-
+Copy the code snippit below and paste it into your Main.tf file. This code snip contains your Oauth reference, terraform providers and a resource to construct a routing skill. **If you are using the workshop org, replace the numbers within the skill resource with your assigned number. If you are using your own org, simply make sure this doesnt match an existing skill.**
 
 ```
 terraform {
@@ -69,7 +56,7 @@ provider "genesyscloud" {
 }
 
 resource "genesyscloud_routing_skill" "test_skill" {
-  name = "Test Skill"
+  name = "Workshop Skill 00"
 }
 
 ```
@@ -77,16 +64,28 @@ resource "genesyscloud_routing_skill" "test_skill" {
 
 Open up a terminal in Visual Studio Code.
 
-![sdsd](/images/CXTerminal.PNG)
-In your terminal, you will run a series of three terraform commands. 
+![image](/images/CXTerminal.PNG)
+
+In your terminal, you will run a series of four terraform commands. 
 
 The first that you will need to run is: 
+
+```
+terraform version
+
+```
+**> Depending on when you downloaded terraform, you may have a different version than the "required_version = "~> 1.2.6" listed in the code snip you pasted into your main.tf file. If your version is different, update the code snippit to match your terraform version. In the image below we can see a version mismatch error.**
+
+![image](/images/tfversion.PNG)
+
+Next, run -
+
 ```
 terraform init
 ```
-This should initialize terraform in your local repository allowing you to execute terraform commands. 
+This should initialize terraform in your local repository allowing you to execute terraform plan/apply commands against your local repo. 
 
-The next command you will run is: 
+We can now begin plotting our changes by executing: 
 ```
 terraform plan
 ```
@@ -106,16 +105,16 @@ At this point, you should be able to go into the org and see that your changes h
 
 Now that we have configured a single object, we can move forward to more complex object creation involving dependencies. We will be adding a user to home division with the the skill we have already created. 
 
-Below is a user constructional resource, many of the optional configuration components have been removed. We will copy this code snip and paste it within the main.tf file underneath the skill resource we created as your initial configuration. 
+Below is a user constructional resource, many of the optional configuration components have been removed. We will copy this code snip and paste it within the main.tf file underneath the skill resource we created as your initial configuration. If you are using the workshop org, replace the digits in the email and name with your assigned number. If you are using your own org, make sure this information does not match an existing user.
 
 ```
 resource "genesyscloud_user" "test_user" {
-  email           = "workshopuser00@genesystest.com"
-  name            = "Workshop User 00"
+  email           = "workshop00@genesystest.com"
+  name            = "Workshop 00"
   password        = "123Password!"
   state           = "inactive"
   acd_auto_answer = true
-  division_id     = genesyscloud_auth_division.terraform.id
+  division_id     = data.genesyscloud_auth_division.terraform.id
   routing_skills {
     skill_id    = genesyscloud_routing_skill.test_skill.id
     proficiency = 4.5
@@ -164,7 +163,6 @@ We will notice an error occur as shown below:
 The error tells us that we need to use a data source within the script identifying the division this plan is applying to. We will navigate **[here](https://registry.terraform.io/providers/MyPureCloud/genesyscloud/latest/docs/data-sources/auth_division)** to find that data source.
 
 
-
 Now we will copy and paste the division data source in order for our script to properly run.
 
 >Note we have modified the Variable name to terraform to match our user resource, and we are searching for the "Home" Division by its name.
@@ -174,4 +172,3 @@ data "genesyscloud_auth_division" "terraform" {
   name = "home"
 }
 ```
-Now we apply our terraform plan again and you may notice another error, how are we going to fix it?

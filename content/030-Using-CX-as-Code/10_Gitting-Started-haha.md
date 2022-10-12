@@ -21,10 +21,11 @@ For both Mac and PC You select “Open with code” or navigate to it from VSCod
 
 Within Genesys Cloud Navigate to Admin > OAuth
 
-Generate a client credentials Oauth client in the Genesys Cloud admin panel.​
+Generate a client credentials Oauth client in the Genesys Cloud admin panel.​ If you are using the workshop org, name it after your account name (Workshop User 00)
 
-The roles tab is where you specify the permissions this client will have.
-> it is best practice to limit the permissions of clients to only their required functions to limit security vulnerabilities.
+The roles tab is where you specify the permissions this client will have. If you are using the workshop org, use the **terraform_user** role. If you are using your own workshop, you can provide master admin permissions for the workshop but should delete this token following the workshop.
+
+> **it is best practice to limit the permissions of OAuth clients to only their required functions to limit security vulnerabilities.**
 
 ![image](/images/CXAuthClient.PNG)
 
