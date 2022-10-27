@@ -172,3 +172,15 @@ data "genesyscloud_auth_division" "terraform" {
   name = "home"
 }
 ```
+If you happened to run into the following error, we will want to run a refresh
+
+![image](/images/terraformstateerror.png)
+
+
+we perform a refresh in terraform by entering the following command in our terminal:
+
+```
+terraform refresh
+```
+
+This is is due to how Terraform logs information about the resources it has created in a state file. This enables Terraform to know which resources are under its control and when to update and destroy them. The terraform state file, by default, is named terraform.tfstate and is held in the same directory where Terraform is run. It is created after running terraform apply. The actual content of this file is a JSON formatted mapping of the resources defined in the configuration and those that exist in your infrastructure. When Terraform is run, it can then use this mapping to compare infrastructure to the code and make any adjustments as necessary.
