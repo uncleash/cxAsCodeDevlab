@@ -1,5 +1,5 @@
 ---
-title: "Resources Configuration"
+title: "Pre-Requisites and Configuration Review"
 chapter: false
 weight: 40
 ---
