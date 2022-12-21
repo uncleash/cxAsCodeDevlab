@@ -2,6 +2,7 @@
 title: "Construya su código base"
 chapter: false
 weight: 20
+locale: "es-ES"
 ---
 
 ## Configurar la estructura de archivos

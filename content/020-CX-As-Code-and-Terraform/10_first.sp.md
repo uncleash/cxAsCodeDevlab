@@ -2,6 +2,7 @@
 title: "¿Por qué usar CX as Code?"
 chapter: false
 weight: 10
+locale: "es-ES"
 ---
 
 ## ¿Por qué usar CX as Code?

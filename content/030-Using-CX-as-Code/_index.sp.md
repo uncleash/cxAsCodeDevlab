@@ -2,6 +2,7 @@
 title: "Usando CX as Code"
 chapter: true
 weight: 30
+locale: "es-ES"
 ---
 
 

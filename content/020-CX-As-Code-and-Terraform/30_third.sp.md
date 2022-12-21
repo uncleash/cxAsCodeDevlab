@@ -2,6 +2,7 @@
 title: "¿Qué es Terraform?"
 chapter: false
 weight: 30
+locale: "es-ES"
 ---
 
 ## ¿Qué es Terraform?

@@ -2,6 +2,7 @@
 title: "Introducción"
 chapter: true
 weight: 10
+locale: "es-ES"
 ---
 
 # Automatización con CX as Code

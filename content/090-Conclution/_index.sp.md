@@ -2,6 +2,7 @@
 title: "Conclusión"
 chapter: true
 weight: 90
+locale: "es-ES"
 ---
 
 # Conclusión

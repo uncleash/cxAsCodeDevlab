@@ -2,6 +2,7 @@
 title: "Empezar a trabajar"
 chapter: false
 weight: 10
+locale: "es-ES"
 ---
 
 ## Crear un repositorio local de archivos

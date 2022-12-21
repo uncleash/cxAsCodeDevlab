@@ -2,6 +2,7 @@
 title: "CX as Code y Terraform"
 chapter: true
 weight: 20
+locale: "es-ES"
 ---
 
 ## Definición y diferenciación de CX as Code y Terraform

@@ -2,6 +2,7 @@
 title: "¿Qué es CX As Code?"
 chapter: false
 weight: 20
+locale: "es-ES"
 ---
 
 ## ¿Qué es CX As Code?

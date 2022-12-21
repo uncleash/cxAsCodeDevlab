@@ -2,6 +2,7 @@
 title: "Configuración de Recursos"
 chapter: false
 weight: 40
+locale: "es-ES"
 ---
 
 ## ¿Qué necesitará para empezar?

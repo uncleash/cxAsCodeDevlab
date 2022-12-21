@@ -2,6 +2,7 @@
 title: "Taller Genesys CX as Code"
 chapter: true
 weight: 90
+locale: "es-ES"
 ---
 
 # Taller Genesys CX as Code
