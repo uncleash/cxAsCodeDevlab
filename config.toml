@@ -1,6 +1,6 @@
-baseURL = "https://genesys-samples.github.io/"
-languageCode = "en-us"
-title = "Genesys Workshops: CX as Code"
+baseURL = "/"
+languageCode = "en-US"
+title = "Genesys Workshops: Your_Workshop_Name"
 theme = "hugo-theme-learn"
 metaDataFormat = "yaml"
 defaultContentLanguageInSubdir= "false"
@@ -48,19 +48,23 @@ home = ["HTML", "RSS", "JSON"]
 
 # English is the default language
 defaultContentLanguage = "en"
-# Force to have /en/my-page and /fr/my-page routes, even for default language.
-defaultContentLanguageInSubdir= true
 
 [Languages]
 [Languages.en]
-title = "Documentation for Hugo Learn Theme"
+contentDir = 'content/en-US'
+title = "Automation with CX as Code"
+description = "Learn how deploy a Genesys Cloud Architect flow and its dependent objects using Archy and CX as Code to manage Architect flows and dependent objects as plain text files that can be checked into source control."
 weight = 1
 languageName = "English"
+languageCode = "en-US"
 
+contentDir = 'content/es-ES'
 [Languages.sp]
-title = "Documentación para el tema Hugo Learn"
+title = "Automatización con CX como código"
+description = "Aprenda a implementar un flujo de Genesys Cloud Architect y sus objetos dependientes usando Archy y CX as Code para administrar los flujos de Architect y los objetos dependientes como archivos de texto sin formato que se pueden verificar en el control de código fuente."
 weight = 2
 languageName = "Español"
+languageCode = "es-ES"
 
 [[menu.shortcuts]] 
 name = "<i class='fas fa-graduation-cap'></i> Genesys Workshops"
